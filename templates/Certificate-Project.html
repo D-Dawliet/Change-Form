@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Change</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Certificate-Project-style.css') }}">
+    <h1 id="title">Are You Ready To Change</h1>
+    <p id="description">The Only Constant in Life Is Change</p>
+</head>
+
+<body>
+    <form id="survey-form" action="/submit" method="POST">
+        <fieldset>
+            <label id="name-label">Name <input required placeholder="Enter your name" id="name" type="text" name="name" /></label>
+            <label id="email-label">Email <input required placeholder="Enter your email" id="email"
+                    type="email" name="email" /></label>
+            <label id="number-label">Age(optional) <input placeholder="Age" id="number" type="number" min="13"
+                    max="100" name="number" /></label>
+            <label id="dropdown-label" for="dropdown">Which option best describes your current state?
+            <select id="dropdown" name="dropdown">
+                <option disabled selected>choose one</option>
+                <option>Broken</option>
+                <option>Lost</option>
+                <option>Confused</option>
+                <option>Mad</option>
+                <option>I Wanna Die</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p id="radio-p">Are you sure you want to change?</p>
+            <label id="radio-label"><input id="radio" type="radio" name="choice-of-change" value="Definitely" /> Definitely</label>
+            <label id="radio-label"><input id="radio" type="radio" name="choice-of-change" value="Maybe" /> Maybe</label>
+            <label id="radio-label"><input id="radio" type="radio" name="choice-of-change" value="Not sure" /> Not sure</label> 
+            
+
+            <label id="why-label" for="why">What's the reason you want to change?
+            <select id="why" name="why">
+                <option disabled selected>select one</option>
+                <option>Bored</option>
+                <option>Had Enough</option>
+                <option>Cuz It's Cool</option>
+                <option>To Survive</option>
+                <option>For Others</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p id="what-p" for="what">What would you like to improved?(<i><small>Check all that apply</small></i>)</p>
+            <label id="what-label"><input id="what" type="checkbox" value="Personality" name="what" /> Personality</label> 
+            <label id="what-label"><input id="what" type="checkbox" value="Physique" name="what" /> Physique</label> 
+            <label id="what-label"><input id="what" type="checkbox" value="Career" name="what" /> Career</label> 
+            <label id="what-label"><input id="what" type="checkbox" value="Hobby" name="what" /> Hobby</label> 
+            <label id="what-label"><input id="what" type="checkbox" value="Belief" name="what" /> Belief</label> 
+            <label id="what-label"><input id="what" type="checkbox" value="Perspective" name="what" /> Perspective</label> 
+            <label id="what-label"><input id="what" type="checkbox" value="Knowledge" name="what" /> Knowledge</label>
+
+            <label id="textarea-label" for="textarea">Additional Information:
+            <textarea id="textarea" rows="7" placeholder="Enter any additional information..." name="textarea"></textarea>
+            </label>
+        </fieldset>
+        <fieldset><input type="submit" id="submit" /></fieldset> 
+    </form>
+</body>
+
+</html>

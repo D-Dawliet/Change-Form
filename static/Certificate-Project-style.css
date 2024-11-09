@@ -1,0 +1,168 @@
+h1, #description {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Tahoma";
+    margin-top: 50px;
+    margin-bottom: -5px;
+    padding-bottom: 0;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+#description {
+    font-family: "Courier New";
+    margin-bottom: 35px;
+    color: rgb(40, 131, 250);
+    text-shadow: 0 0 1px black;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0, 38, 255, 0.2), rgba(55, 0, 255, 0.2)), url(img-CP/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
+}
+
+form {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: rgba(37, 82, 206, 0.5);
+    padding: 35px 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 5px black;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #textarea-label {
+    display: block;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+    font-family: "Verdana";
+    text-shadow: 0 0 2px black;
+}
+
+#dropdown, #why {
+    display: block;
+}
+
+#why-label {
+    display: block;
+    margin-top: 35px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+    font-family: "Verdana";
+    text-shadow: 0 0 2px black;
+}
+
+#name, #email, #number, #dropdown, #why, #textarea {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: "Arial";
+    box-sizing: border-box;
+    background-color: rgba(45, 46, 53, 0.829);
+    border: none;
+    box-shadow: 0 0 5px black;
+
+}
+
+#radio {
+    display: inline;
+    margin: 7px 0;
+    padding: 0.25rem;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#what {
+    display: inline;
+    margin: 7px 0;
+    padding: 0.25rem;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#radio-label {
+    display: block;
+    font-size: 1.2rem;
+    font-family: "Verdana";
+    text-shadow: 0 0 0.5px black;
+}
+
+#what-label {
+    display: block;
+    font-size: 1.2rem;
+    font-family: "Verdana";
+    text-shadow: 0 0 0.5px black;
+}
+
+#radio-p{
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Verdana";
+    padding: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 2px black;
+}
+
+#what-p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Verdana";
+    padding: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 2px black;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    height: 1.2em
+}
+
+
+#textarea {
+    display: block;
+    border-radius: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+#textarea-label {
+    margin-top: 40px;
+    text-shadow: 0 0 2px black;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    font-family: "Arial";
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    background-color: rgb(3, 18, 70);
+    color: white;
+    text-shadow: 0 0 5px rgb(68, 0, 255);
+}
+
+#submit:hover {
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+#submit:active {
+    background-color: rgb(13, 5, 90);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+}
+
